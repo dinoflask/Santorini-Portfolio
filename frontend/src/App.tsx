@@ -39,7 +39,7 @@ class App extends React.Component<Props, AppState> {
 
   newGame = async () => {
     try {
-      const response = await fetch("${API_BASE_URL}/newgame");
+      const response = await fetch(`${API_BASE_URL}/newgame`);
       const json = await response.json();
 
       // SINGLE batched setState - merges all properties
@@ -189,7 +189,7 @@ class App extends React.Component<Props, AppState> {
 
   passBuild: React.MouseEventHandler = async (e) => {
     e.preventDefault();
-    const response = await fetch("${API_BASE_URL}/passBuild");
+    const response = await fetch(`${API_BASE_URL}/passBuild`);
     const json = await response.json();
     this.setState({
       cells: json["cells"],
@@ -204,7 +204,7 @@ class App extends React.Component<Props, AppState> {
 
   passMove: React.MouseEventHandler = async (e) => {
     e.preventDefault();
-    const response = await fetch("${API_BASE_URL}/passMove");
+    const response = await fetch(`${API_BASE_URL}/passMove`);
     const json = await response.json();
     this.setState({
       cells: json["cells"],
