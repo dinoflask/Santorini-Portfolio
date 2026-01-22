@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FCF7F8 0%, #CED3DC 100%);
 }
 
 /* Game UI container - scaled down */
@@ -38,7 +38,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   gap: 6px;
   /* Larger gaps too */
-  background-color: #2196F3;
+  background-color: #275DAD;
   padding: 16px;
   /* More padding */
   border-radius: 20px;
@@ -65,7 +65,7 @@ body {
 #bottombar {
   display: flex;
   gap: 0.5rem;
-  padding: 0 1rem;
+  padding: 0 0rem;
   box-sizing: border-box;
 }
 
@@ -74,6 +74,7 @@ body {
   height: 100%;
   border: none;
   border-radius: 8px;
+  background: #ABA9C3;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -169,10 +170,55 @@ body {
 #app-header {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: linear-gradient(180deg, #FCF7F8 10%, #5B616A 50%);
+  
   margin: 0.5rem auto 0.1rem auto;
   text-align: center;
   user-select: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-family: 'Georgia', serif;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Lowers to bottom; use flex-start for top */
+  height: 40vh;
+  /* Provides space; adjust 20-60vh as needed */
+  width: 100%;
+  transform: translateY(30px);
+  /* Fine-tune lower offset */
+}
+
+#image {
+  max-width: 40%;
+  /* Scales horizontally; 50-90% */
+  max-height: 13vh;
+  /* Scales vertically; limits total height */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* Preserves aspect ratio, no distortion */
+  margin-top: -10px;
+    /* Lowers by 10 pixels; adjust -5px to -20px */
+}
+
+
+/* White links for all states */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: white;
+  text-decoration: underline;
+  /* Optional: subtle feedback */
 }

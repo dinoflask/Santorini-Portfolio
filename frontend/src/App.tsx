@@ -132,8 +132,10 @@ class App extends React.Component<Props, AppState> {
 
     return (
       <div id="app-container">
-        <header id="app-header">Santorini</header>
         {/* Winner popup stays fixed */}
+        <div className="image-wrapper">
+          <img id="image" src="santoriniLogo.png" alt="Santorini Logo"></img>
+        </div>
         {this.state.winner != -1 && (
           <div id="winner-popup">
             <div id="winner-message">
