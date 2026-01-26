@@ -1,20 +1,24 @@
 /* Full viewport container */
 html,
 body {
+  font-family: Optima, sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  
   font-size: 1.7rem;
   /* No scrolling */
 }
 
 #app-container {
+  
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   background: linear-gradient(135deg, #FCF7F8 0%, #CED3DC 100%);
 }
 
@@ -59,6 +63,7 @@ body {
   text-align: center;
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
 }
 
 /* Bottombar button layout */
@@ -67,20 +72,23 @@ body {
   gap: 0.5rem;
   padding: 0 0rem;
   box-sizing: border-box;
+  
 }
 
 #bottombar button {
+  font-family: Palatino;
   flex: 1;
   height: 100%;
   border: none;
   border-radius: 8px;
-  background: #ABA9C3;
+  background: linear-gradient(0deg, #4a6a72, #2196F3);
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 #bottombar button:hover {
+  font-family: Palatino;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -170,13 +178,13 @@ body {
 #app-header {
   font-size: 2rem;
   font-weight: bold;
-  color: linear-gradient(180deg, #FCF7F8 10%, #5B616A 50%);
+  color: linear-gradient(180deg, #FCF7F8 10%, #2196F3 50%);
   
   margin: 0.5rem auto 0.1rem auto;
   text-align: center;
   user-select: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  font-family: 'Georgia', serif;
+  font-family: Palatino;
 }
 
 .image-wrapper {
@@ -221,4 +229,9 @@ a:focus {
   color: white;
   text-decoration: underline;
   /* Optional: subtle feedback */
+}
+
+#instructions{
+  color: #352208;
+  font-family: Palatino;
 }
